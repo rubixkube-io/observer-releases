@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://rubixkube.ai/logo.svg" alt="RubixKube" width="60" />
+  <img src="https://raw.githubusercontent.com/rubixkube-io/rubixkube-ai/main/public/logo-icon.png" alt="RubixKube" width="60" />
 </p>
 
 <h1 align="center">RubixKube Observer Agent</h1>
@@ -21,10 +21,10 @@ The **Observer Agent** continuously monitors your infrastructure — VMs, AWS ac
 
 ## Quick Install
 
-Get your API key from [console.rubixkube.ai](https://console.rubixkube.ai) → **Clusters** → **Add Cluster**, then run:
+Get your API key from [console.rubixkube.ai](https://console.rubixkube.ai) → **Environments** → **Connect Environment**, then run:
 
 ```bash
-curl -fsSL https://docs.rubixkube.ai/install.sh | sudo bash
+curl -fsSL "https://api.rubixkube.ai/install/observer.sh" | bash
 ```
 
 The interactive installer auto-detects your environment and walks you through setup. Pass `--api-key=<KEY>` to skip the prompt.
@@ -105,7 +105,7 @@ The agent is configured via environment variables. Key settings:
 
 ```bash
 # Interactive uninstall
-curl -fsSL https://docs.rubixkube.ai/install.sh | sudo bash -s -- --uninstall
+curl -fsSL "https://api.rubixkube.ai/install/observer.sh" | bash -s -- --uninstall
 
 # Or if already installed
 sudo rk-observer --uninstall  # coming soon
